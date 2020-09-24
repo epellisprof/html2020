@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: #667292;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #bccad6;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+footer {
+  background-color: #8d9db6;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-size: 2em
+}
+
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Header</h2>
+</header>
+
+<section>
+  <nav>
+      <h2>nav</h2>
+    <ul>
+      <li><a href="#">corrupti</a></li>
+      <li><a href="#">voluptatibus</a></li>
+      <li><a href="#">nihil</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>voluptas</h1>
+    <p>Rerum quia eum iusto maxime amet assumenda impedit maxime. Nulla omnis corrupti suscipit odit perspiciatis vel accusamus voluptatibus eaque. Illum repellendus qui rerum commodi asperiores at quis quas sapiente. Optio ut odio. Sed voluptatem corrupti voluptatem. Ut officia voluptatum fugit et nostrum fugiat.</p>
+    <p>Aut nemo aut numquam iusto harum omnis aut optio. Repellat qui dignissimos ut explicabo impedit est hic. Consequatur explicabo aut vitae maxime ut sequi quae officia.</p>
+    <h1>voluptas</h1>
+    <p>Rerum quia eum iusto maxime amet assumenda impedit maxime. Nulla omnis corrupti suscipit odit perspiciatis vel accusamus voluptatibus eaque. Illum repellendus qui rerum commodi asperiores at quis quas sapiente. Optio ut odio. Sed voluptatem corrupti voluptatem. Ut officia voluptatum fugit et nostrum fugiat.</p>
+    <p>Aut nemo aut numquam iusto harum omnis aut optio. Repellat qui dignissimos ut explicabo impedit est hic. Consequatur explicabo aut vitae maxime ut sequi quae officia.</p>
+    <h1>voluptas</h1>
+    <p>Rerum quia eum iusto maxime amet assumenda impedit maxime. Nulla omnis corrupti suscipit odit perspiciatis vel accusamus voluptatibus eaque. Illum repellendus qui rerum commodi asperiores at quis quas sapiente. Optio ut odio. Sed voluptatem corrupti voluptatem. Ut officia voluptatum fugit et nostrum fugiat.</p>
+    <p>Aut nemo aut numquam iusto harum omnis aut optio. Repellat qui dignissimos ut explicabo impedit est hic. Consequatur explicabo aut vitae maxime ut sequi quae officia.</p>
+
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>

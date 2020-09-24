@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>CSS Layout Float</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: #667292;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: #bccad6;
+            padding: 20px;
+            font-size: 1.5em
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1e3dd;
+            height: 300px;
+        }
+
+        section:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            background-color: #8d9db6;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            font-size: 2em;
+        }
+
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Header</h2>
+    </header>
+
+    <section>
+        <nav>
+            <h3>NAV</h3>
+            <ul>
+                <li><a href="#">hic</a></li>
+                <li><a href="#">magnam</a></li>
+                <li><a href="#">ratione</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>laudantium</h1>
+            <p>Dolorem recusandae illum occaecati tempora et excepturi perspiciatis qui.</p>
+            <p>Et deleniti perferendis fugit.Expedita et nesciunt commodi dolorem delectus officiis itaque repellendus placeat.</p>
+        </article>
+    </section>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+
+</body>
+
+</html>
