@@ -1,0 +1,47 @@
+  <!DOCTYPE html>
+  <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+
+        <!-- Google Icon Font -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- materialize.css -->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+        <!-- CSS Customizado -->
+        <link rel="stylesheet" href="css/customizado.css">
+        
+        <!-- viewport para mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <form action="" class="container">
+          <div class="input-field col s12 l6">
+            <input type="text" id="first_name" class="validate">
+            <label for="first_name">First Name</label>
+          </div>
+          <div class="input-field col s12 l6">
+            <input type="text" id="last_name" class="validate">
+            <label for="last_name">Last Name</label>
+          </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">email</i>
+            <input type="email" id="email" class="validate">
+            <label for="email" data-error="wrong" data-success="right">Email</label>
+          </div>
+          <div class="input-field col s12">
+            <textarea id="textarea1" class="materialize-textarea"></textarea>
+            <label for="textarea1">Textarea</label>
+          </div>
+          <button class="btn waves-effect waves-light blue" type="submit" name="action">Enviar
+              <i class="material-icons right">send</i>
+          </button>
+        </form>
+        <!-- JavaScript no final do body para otimizar o carregamento -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js">
+        </script>      
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+    </body>
+  </html>
