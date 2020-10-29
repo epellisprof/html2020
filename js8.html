@@ -23,7 +23,7 @@
         </style>
     </head>
 
-    <body">
+    <body id="cor">
         <h1>Trocar cor do fundo</h1>
         <h3>Criar um script e CSS necessários para clicar nos botoes e trocar de cor de fundo da pagina</h3>
         <a href="#" OnClick="fundo('blue')" class="waves-effect waves-light btn blue">azul</a>
@@ -33,5 +33,15 @@
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js">
         </script>      
         <script type="text/javascript" src="js/materialize.min.js"></script>
+    
+            <script>
+                function fundo(cor){
+                    var troca_fundo = document.getElementById("cor");
+                    troca_fundo.style["background-color"] = cor;
+                    troca_fundo.style["color"] = "white";
+                }
+            </script>
+    
+    
     </body>
   </html>

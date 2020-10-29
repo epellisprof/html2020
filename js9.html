@@ -28,9 +28,46 @@
         </ul>
         <h6>Quando os valores dos resultados forem maiores que 100, formatar eles com a cor azul.</h6>
 
+        <form action="#" name="calcular">
+          <div class="input-field col s12 l6">
+            <input type="number" id="n1" class="validate" name="n1">
+            <label for="n1">Numero 1</label>
+          </div>
+          <div class="input-field col s12 l6">
+            <input type="number" id="n2" class="validate" name="n2">
+            <label for="n2">Numero 2</label>
+          </div>
+          <div class="input-field col s12">
+            <input type="number" id="n3" class="validate" name="n3">
+            <label for="n3">Numero 3</label>
+          </div>
+          <a href="#" class="waves-effect waves-light btn blue" id="Calc" onclick="Calcular()">Calcular</a>
+        </form>
+
+
         <!-- JavaScript no final do body para otimizar o carregamento -->
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js">
         </script>      
         <script type="text/javascript" src="js/materialize.min.js"></script>
+    
+        <script>
+            function Calcular(){
+
+                var n1 = new Number(calcular.n1.value);
+                var n2 = new Number(calcular.n2.value);
+                var n3 = new Number(calcular.n3.value);
+            //     <li>A * B * C</li>
+            // <li>A / B * C</li>
+            // <li>C + B - A</li>    
+
+                var res_n1 = n1 * n2 * n3;
+                var res_n2 = n1 / n2 * n3;
+                var res_n3 = n3 + n2 - n1;
+
+                
+            }
+        </script>
+
+    
     </body>
   </html>
