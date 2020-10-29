@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Novo Documento</title>
+</head>
+<body>
+<!-- <form name="contato" action="#">
+    <input name="completo" placeholder="Nome">
+    <input type="button" value="clicar" onclick="pegar()">
+</form>
+<script>
+    function pegar(){
+        alert(document.contato.completo.value);
+    }
+</script> -->
+
+<br>
+<form name="calcular" action="#">
+<input type="number" name="n1" placeholder="Numero 1"><br>
+<input type="number" name="n2" placeholder="Numero 2"><br>
+<input type="button" value="Calcular" onclick="Calcular()">
+<h2 id="resultado">Resultado: </h2>
+</form>
+<script>
+function Calcular(){
+    var n1 = new Number(document.calcular.n1.value);
+    var n2 = new Number(document.calcular.n2.value);
+    var soma = n1 + n2;
+    console.log(soma)
+
+    var h2 = document.getElementById('resultado');
+
+    h2.innerHTML = "Resultado: " + soma;
+    if (soma >= 10) {
+        h2.style["color"] = "red";    
+    } else {
+        h2.style["color"] = "blue";
+    }
+}
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+document.write("Ola mundo 2");

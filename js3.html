@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Novo Documento</title>
+</head>
+<body>
+    
+    <!-- <input type="text" onfocus="console.log('foco nele')"> -->
+    <input type="text" onfocus="console.log('foco nele')">
+
+<h1 id="numero"></h1>
+<button onclick="calc()"> Clicar</button>
+<script>
+    function texto(){
+        window.alert("Ola mundo");
+    }
+
+    texto();
+
+    texto();
+    function calc(){
+        var num = 10 * 30;
+        //return num
+        alert(num)
+    }
+//    document.getElementById("numero").innerHTML = calc();
+    function calcular(n1, n2){
+        var num = n1 * n2
+        alert("Resultado " + num)
+    }
+    calcular(30, 50);
+    calcular(20, 10);
+
+    
+
+</script>
+
+</body>
+</html>
