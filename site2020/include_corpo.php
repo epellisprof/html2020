@@ -6,18 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>testes</h2>
-    <?php 
-      echo "Ola mundo!!!!"; 
-    ?>
-<br>
-<?php echo "<br>segundo teste"; ?>
-
-<h3>testes</h3>
 <?php 
-  echo "ola";
-  echo "ola ola";
+  include("include_cab.php"); 
 ?>
+<h1> meu html </h1>
 
+<?php 
+  include("include_rodape.php"); 
+?>
 </body>
 </html>
